@@ -2,7 +2,7 @@
 body{
   /*background: #534E52;*/
   margin: 0, auto;
-    background: url("../parknashville/img/bg.png");
+    background: url("/parknashville/img/bg.png");
 
 #addMarkerbtn {
   background: red;
@@ -27,7 +27,7 @@ body{
     
 
  .container{
-  background: url("../parknashville/img/white.jpg");
+  background: url("/parknashville/img/white.jpg");
   /*width: 70%;*/
   /*padding: 20px, auto;*/
   padding: 0;
