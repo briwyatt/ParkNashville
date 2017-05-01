@@ -60,7 +60,7 @@ when("/edgehill", {
   templateUrl: "/parknashville/partials/mapview.html",
   controller: "edgehillCtrl"
 }).
-otherwise("/");
+otherwise("/parknashville/");
 })
 .run(function($rootScope, $location) {
 
