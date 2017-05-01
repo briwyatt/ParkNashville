@@ -9,55 +9,55 @@ app.config(function($routeProvider, $locationProvider){
 $routeProvider.
 
 when("/parknashville/", {
-  templateUrl: "/parknashville/partialsmainList.html",
+  templateUrl: "/parknashville/partials/mainList.html",
   controller: "listCtrl"
 }).
 when("/downtown", {
-  templateUrl: "/parknashville/partialsmapview.html",
+  templateUrl: "/parknashville/partials/mapview.html",
   controller: "downtownCtrl"
 }).
 when("/EightSouth", {
-  templateUrl: "/parknashville/partialsmapview.html",
+  templateUrl: "/parknashville/partials/mapview.html",
   controller: "EightSouthCtrl"
 }).
 when("/westend", {
-  templateUrl: "/parknashville/partialsmapview.html",
+  templateUrl: "/parknashville/partials/mapview.html",
   controller: "westendCtrl"
 }).
 when("/fivepoints", {
-  templateUrl: "/parknashville/partialsmapview.html",
+  templateUrl: "/parknashville/partials/mapview.html",
   controller: "fivepointsCtrl"
 }).
 when("/twelvesouth", {
-  templateUrl: "/parknashville/partialsmapview.html",
+  templateUrl: "/parknashville/partials/mapview.html",
   controller: "twelvesouthCtrl"
 }).
 when("/hillsborovillage", {
-  templateUrl: "/parknashville/partialsmapview.html",
+  templateUrl: "/parknashville/partials/mapview.html",
   controller: "hillsborovillageCtrl"
 }).
 when("/greenhills", {
-  templateUrl: "/parknashville/partialsmapview.html",
+  templateUrl: "/parknashville/partials/mapview.html",
   controller: "greenhillsCtrl"
 }).
 when("/germantown", {
-  templateUrl: "/parknashville/partialsmapview.html",
+  templateUrl: "/parknashville/partials/mapview.html",
   controller: "germantownCtrl"
 }).
 when("/thegulch", {
-  templateUrl: "/parknashville/partialsmapview.html",
+  templateUrl: "/parknashville/partials/mapview.html",
   controller: "thegulchCtrl"
 }).
 when("/musicrow", {
-  templateUrl: "/parknashville/partialsmapview.html",
+  templateUrl: "/parknashville/partials/mapview.html",
   controller: "musicrowCtrl"
 }).
 when("/onehundredoaks", {
-  templateUrl: "/parknashville/partialsmapview.html",
+  templateUrl: "/parknashville/partials/mapview.html",
   controller: "onehundredoaksCtrl"
 }).
 when("/edgehill", {
-  templateUrl: "/parknashville/partialsmapview.html",
+  templateUrl: "/parknashville/partials/mapview.html",
   controller: "edgehillCtrl"
 }).
 otherwise("/");
