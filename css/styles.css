@@ -1,0 +1,36 @@
+
+body{
+  /*background: #534E52;*/
+  margin: 0, auto;
+    background: url("../parknashville/img/bg.png");
+
+#addMarkerbtn {
+  background: red;
+}
+  
+}
+.well-image {
+  width: 100%;
+  height: 162px;
+}
+
+.mini {
+  width: 35px;
+  height: 25px;
+}
+ #map {
+        height: 950px;
+        margin: auto;
+        padding: auto;
+        margin-bottom: 10px;
+      }
+    
+
+ .container{
+  background: url("../parknashville/img/white.jpg");
+  /*width: 70%;*/
+  /*padding: 20px, auto;*/
+  padding: 0;
+  display: block;
+}
+

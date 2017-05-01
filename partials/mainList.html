@@ -1,0 +1,26 @@
+
+<div>
+    <form class="form-inline well well-sm clearfix">
+        <span class="glyphicon glyphicon-search"></span>
+        <input type="text" placeholder="Search..." class="form-control" ng-model="list.search">
+        <!-- ng-model allows us to bind the input text to properties on our controller-->
+    </form>
+    <div class="row">
+        <div class="col-sm-6" ng-repeat="neighborhood in neighborhoods | filter: list.search">
+            <!--takes the return value from the neighborhoods in list.data every iteration will be filterd by the list.search search term -->
+            <div class="well well-sm">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img ng-src="{{neighborhood.img_url}}" class="img-rounded img-responsive well-image">
+                    </div>
+                    <div class="col-md-6">
+                        <h5>{{ neighborhood.name }}</h5>
+                        <p><strong>Landmarks:</strong> {{ neighborhood.landmarks }}</p>
+                        <p><strong>Zip Codes: </strong>{{ neighborhood.zipcodes }}</p>
+                        <a class="btn btn-primary pull-right" ng-href="/{{ neighborhood.href }}">Park Here!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

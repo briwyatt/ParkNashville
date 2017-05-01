@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="parkNash">
+<head>
+  <base href="/">
+  <meta charset="UTF-8">
+  <title>PARKNASH</title>
+  <!-- Bootstrap CSS and my own CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="parknashville/css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="page-header">
+     <a href="/#" class="navbar-left"><img class="mini" src="/parknashville/img/logo.png"></a><h1 id="titlenav"><strong>PARK</strong>Nashville
+</h1>
+
+    </div>
+
+</div>
+<div class="container">
+    <div ng-view></div>
+  </div>
+ <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAu53xxD0ezpqcUvDSP8ZGLAbxQPwvMRZA"
+    async defer></script>
+
+  <script type="text/javascript" src="https://cdn.firebase.com/js/client/2.3.2/firebase.js"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script type="text/javascript" src="/lib/node_modules/angular/angular.min.js"></script>
+  <script type="text/javascript" src="/lib/node_modules/angular-route/angular-route.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular-route.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-route.js"></script>
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="parknashville/app/app.js"></script>
+  <script type="text/javascript" src="parknashville/app/values/creds.js"></script>
+  <script type="text/javascript" src="parknashville/app/controllers/listCtrl.js"></script>
+  <script type="text/javascript" src="parknashville/app/factories/markerFactory.js"></script>
+  <script type="text/javascript" src="parknashville/app/factories/directionsFactory.js"></script>
+  <script type="text/javascript" src="parknashville/app/factories/style.js"></script>
+ 
+  <script type="text/javascript" src="parknashville/app/controllers/downtownCtrl.js"></script>
+  <script type="text/javascript" src="parknashville/app/controllers/EightSouthCtrl.js"></script>
+  <script type="text/javascript" src="parknashville/app/controllers/westendCtrl.js"></script>
+  <script type="text/javascript" src="parknashville/app/controllers/fivepointsCtrl.js"></script>
+  <script type="text/javascript" src="parknashville/app/controllers/twelvesouthCtrl.js"></script>
+  <script type="text/javascript" src="parknashville/app/controllers/hillsborovillageCtrl.js"></script>
+  <script type="text/javascript" src="parknashville/app/controllers/greenhillsCtrl.js"></script>
+  <script type="text/javascript" src="parknashville/app/controllers/germantownCtrl.js"></script>
+  <script type="text/javascript" src="parknashville/app/controllers/thegulchCtrl.js"></script>
+  <script type="text/javascript" src="parknashville/app/controllers/musicrowCtrl.js"></script>
+  <script type="text/javascript" src="parknashville/app/controllers/onehundredoaksCtrl.js"></script>
+  <script type="text/javascript" src="parknashville/app/controllers/edgehillCtrl.js"></script>
+
+</body>
+</html>
