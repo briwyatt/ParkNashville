@@ -17,5 +17,5 @@
     - Maps are created using GoogleMap's JavaScript v.3 API
     - Google's FireBase used for database storage. 
 
-## PARKNashville is now LIVE: try it now:
+## PARKNashville is LIVE: try it now:
 https://briwyatt.github.io/parknashville/
