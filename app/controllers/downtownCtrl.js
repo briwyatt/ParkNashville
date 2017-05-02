@@ -64,7 +64,9 @@ app.controller("downtownCtrl", function($scope, styleFactory, markerFactory, $ti
     populateMarkerArray();
 
     google.maps.event.addListener(map, 'click', function(event) {
-
+        if (grab === null){
+            event.preventDefault();   
+    };
         event.latLng.lat();
         event.latLng.lat();
         console.log("", event.latLng.lat()); 
