@@ -64,6 +64,11 @@ app.controller("downtownCtrl", function($scope, styleFactory, markerFactory, $ti
     populateMarkerArray();
 
     google.maps.event.addListener(map, 'click', function(event) {
+        console.log("grab", grab);
+        console.log("this", this);
+        console.log("title", title);
+        console.log("this.title", this.title);
+
         if (grab === null){
             event.preventDefault();   
     };
