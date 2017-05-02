@@ -64,17 +64,18 @@ app.controller("downtownCtrl", function($scope, styleFactory, markerFactory, $ti
     populateMarkerArray();
 
     google.maps.event.addListener(map, 'click', function(event) {
-        console.log("grab", grab);
+        console.log("grab.value", grab.value);
         // console.log("this", this);
         // console.log("title", title);
         // console.log("this.title", this.title);
+        // 
 
         if (grab.value === null){
             event.preventDefault();   
-    };
         event.latLng.lat();
         event.latLng.lat();
         console.log("", event.latLng.lat()); 
+    };
     });
 
     google.maps.event.addListener(map, 'click', function(event) {
@@ -83,7 +84,6 @@ app.controller("downtownCtrl", function($scope, styleFactory, markerFactory, $ti
         var grab = document.getElementById("grab").value;
         if (grab.value === null){
              event.preventDefault();   
-    };
         var myLatLng = event.latLng;
         var lat = myLatLng.lat();
         var lng = myLatLng.lng();
@@ -100,6 +100,7 @@ app.controller("downtownCtrl", function($scope, styleFactory, markerFactory, $ti
             place: "downtown",
             title: grab
         };
+    };
 
         saveMarkerToFB($scope.coordinates);
     });
