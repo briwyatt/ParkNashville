@@ -12,7 +12,7 @@
 ParkNashville is ideal for a user who already utilizes the GoogleMaps mobile application, as this app will take the exact geographic coordinates of a user’s chosen parking spot and plug it in as a destination on GoogleMaps. ParkNashville, in short, allows the user to map to their actual intended destination: where they park their car.
 
 ## Front End Capstone Project:
-#### ParkNashville is my first web application and was created as a capstone project during the Front-End portion of my cirriculum at Nashville Software School. [Capstone Presentation Notes](http://slides.com/briwyatt/deck-1#/)
+#### ParkNashville is my first web application and was created as a capstone project during the Front-End portion of my cirriculum at Nashville Software School. [Capstone Presentation Slides](http://slides.com/briwyatt/deck-1#/)
 
 ## Technologies Used:
     - 90% JavaScript, 9.8% HTML, 0.5% CSS
