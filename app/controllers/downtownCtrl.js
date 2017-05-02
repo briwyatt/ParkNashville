@@ -69,7 +69,7 @@ app.controller("downtownCtrl", function($scope, styleFactory, markerFactory, $ti
         console.log("title", title);
         console.log("this.title", this.title);
 
-        if (grab === null){
+        if (grab.value === null){
             event.preventDefault();   
     };
         event.latLng.lat();
@@ -81,7 +81,7 @@ app.controller("downtownCtrl", function($scope, styleFactory, markerFactory, $ti
         console.log("this event", event);
 
         var grab = document.getElementById("grab").value;
-        if (grab === null){
+        if (grab.value === null){
              event.preventDefault();   
     };
         var myLatLng = event.latLng;
