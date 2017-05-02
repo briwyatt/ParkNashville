@@ -64,15 +64,19 @@ app.controller("downtownCtrl", function($scope, styleFactory, markerFactory, $ti
     populateMarkerArray();
 
     google.maps.event.addListener(map, 'click', function(event) {
+
         event.latLng.lat();
         event.latLng.lat();
-        console.log("", event.latLng.lat());
+        console.log("", event.latLng.lat()); 
     });
 
     google.maps.event.addListener(map, 'click', function(event) {
         console.log("this event", event);
 
-        var grab = document.getElementById('grab').value;
+        var grab = document.getElementById("grab").value;
+        if (grab === null){
+             event.preventDefault();   
+    };
         var myLatLng = event.latLng;
         var lat = myLatLng.lat();
         var lng = myLatLng.lng();
