@@ -1,7 +1,7 @@
 # PARKNashville: find great parking in Nashville
 
 ## Screenshot
-![:mapview:](https://raw.githubusercontent.com/goldsborough/capstone/master/docs/img/screenshot.png)
+![:mapview:](https://github.com/briwyatt/parknashville/blob/master/img/Screen%20Shot%202017-05-01%20at%2010.16.49%20PM.png)
 
 
 ####  PARKNashville is a mobile-friendly web application that allows users to create & find parking information throughout the city of Nashville, Tennessee. The application is organized into several Nashville Areas that are commonly known as challenging to navigate and/or find parking. 
