@@ -9,7 +9,7 @@
 ####  PARKNashville is a mobile-friendly web application that allows users to create & find parking information throughout the city of Nashville, Tennessee. The application is organized into several Nashville Areas that are commonly known as challenging to navigate and/or find parking. 
 
 ## How to Use:
-ParkNashville is ideal for a user who already utilizes the GoogleMaps mobile application, as this app will take the exact geographic coordinates of a user’s chosen parking spot and plug it in as a destination on GoogleMaps. ParkNashville, then, allow the user to map to their actual intended destination: where they park their car.
+ParkNashville is ideal for a user who already utilizes the GoogleMaps mobile application, as this app will take the exact geographic coordinates of a user’s chosen parking spot and plug it in as a destination on GoogleMaps. ParkNashville, in short, allows the user to map to their actual intended destination: where they park their car.
 
 ## Front End Capstone Project:
 #### ParkNashville is my first web application and was created as a capstone project during the Front-End portion of my cirriculum at Nashville Software School. [Capstone Presentation Notes](http://slides.com/briwyatt/deck-1#/)
