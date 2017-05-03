@@ -73,11 +73,11 @@ app.controller("downtownCtrl", function($scope, styleFactory, markerFactory, $ti
         if (grab.value === null){
             event.preventDefault(); 
             event.stopPropagation();
-    }  
         console.log("grab.value", grab.value);
         event.latLng.lat();
         event.latLng.lat();
         console.log("", event.latLng.lat()); 
+    }  
 
     });
 
