@@ -82,6 +82,7 @@ app.controller("downtownCtrl", function($scope, styleFactory, markerFactory, $ti
         console.log("this event", event);
 
         var grab = document.getElementById("grab").value;
+        console.log("grab", grab);
         var myLatLng = event.latLng;
         var lat = myLatLng.lat();
         var lng = myLatLng.lng();
