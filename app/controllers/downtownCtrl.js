@@ -87,7 +87,7 @@ app.controller("downtownCtrl", function($scope, styleFactory, markerFactory, $ti
         var lng = myLatLng.lng();
         console.log("whats the grab value after assignment made to variable grab:", grab);
         console.log("whats the grab value after assignment made to variable grab.value:", grab.value);
-        if (grab.value === null){
+        if (grab === null){
             event.preventDefault();
         } else {
         console.log("lat", lat);
