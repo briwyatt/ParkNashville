@@ -8,9 +8,9 @@ app.controller("downtownCtrl", function($scope, styleFactory, markerFactory, $ti
         },
         zoom: 16,
         styles: styleFactory.styles
-    }); 
+    });
     var populateMarkerArray = function() {
-       markerFactory.loadMarkers("downtown")
+        markerFactory.loadMarkers("downtown")
             .then((markerdata) => {
                 let markers = markerdata;
                 console.log("this map's markers array", markers);
@@ -59,7 +59,7 @@ app.controller("downtownCtrl", function($scope, styleFactory, markerFactory, $ti
                     });
                 }
             });
-        }
+    }
 
     populateMarkerArray();
 
@@ -70,14 +70,11 @@ app.controller("downtownCtrl", function($scope, styleFactory, markerFactory, $ti
         // console.log("this.title", this.title);
         // 
 
-        if (grab.value === null){
-            event.preventDefault(); 
-            event.stopPropagation();
         console.log("grab.value", grab.value);
         event.latLng.lat();
         event.latLng.lat();
-        console.log("", event.latLng.lat()); 
-    }  
+        console.log("", event.latLng.lat());
+
 
     });
 
@@ -102,10 +99,15 @@ app.controller("downtownCtrl", function($scope, styleFactory, markerFactory, $ti
             title: grab
         };
 
-        saveMarkerToFB($scope.coordinates);
+        if ($scope.coordinates.title === null) {
+            event.preventDefault();
+            event.stopPropagation();
+        } else {
+            saveMarkerToFB($scope.coordinates);
+        }
     });
 
- // FUNCTION DEFINITIONS 
+    // FUNCTION DEFINITIONS 
     function displaymessage() {
         $("#grab").each(function() {
             this.selectedIndex = 0;
@@ -135,7 +137,7 @@ app.controller("downtownCtrl", function($scope, styleFactory, markerFactory, $ti
             .then(
                 () => {
                     markerFactory.loadMarkers("downtown")
-                                $route.reload();
+                    $route.reload();
                 }
             );
     }
@@ -157,7 +159,7 @@ app.controller("downtownCtrl", function($scope, styleFactory, markerFactory, $ti
 
     }
 
-       $('#grab').change(function() {
+    $('#grab').change(function() {
         // console.log("grab.value", grab.value);
 
         let modal = $('#myModal');
