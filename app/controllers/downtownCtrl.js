@@ -88,12 +88,10 @@ app.controller("downtownCtrl", function($scope, styleFactory, markerFactory, $ti
         var lng = myLatLng.lng();
         console.log("whats the grab value after assignment made to variable grab:", grab);
         console.log("whats the grab value after assignment made to variable grab.value:", grab.value);
-        if (grab === null){
+        if (grab == null){
             event.preventDefault();
             event.stopPropagation();
         } else {
-        console.log("lat", lat);
-        console.log("lng", lng);
 
         $scope.lat = lat;
         $scope.lng = lng;
@@ -104,6 +102,7 @@ app.controller("downtownCtrl", function($scope, styleFactory, markerFactory, $ti
             place: "downtown",
             title: grab
         };
+
             saveMarkerToFB($scope.coordinates);
         }
     });
