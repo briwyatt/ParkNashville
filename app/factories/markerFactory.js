@@ -4,6 +4,8 @@ app.factory("markerFactory", function($q, $http, Creds) {
     // POST NEW MARKER OBJECT TO FIREBASE DATABASE
     let saveMarker = function(marker) {
         console.log("inside SaveMarkerFunction this.title", this.title);
+        console.log("inside SaveMarkerFunction title", title);
+        console.log("inside SaveMarkerFunction this", this);
         console.log("marker", marker);
         return $q((resolve, reject) => {
             $http.post("https://parknash-c096b.firebaseio.com/marker.json", angular.toJson(marker))
