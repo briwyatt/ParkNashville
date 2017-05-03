@@ -71,19 +71,20 @@ app.controller("downtownCtrl", function($scope, styleFactory, markerFactory, $ti
         // 
 
         if (grab.value === null){
-            event.preventDefault();   
+            event.preventDefault(); 
+            event.stopPropagation();
+    }  
+        console.log("grab.value", grab.value);
         event.latLng.lat();
         event.latLng.lat();
         console.log("", event.latLng.lat()); 
-    };
+
     });
 
     google.maps.event.addListener(map, 'click', function(event) {
         console.log("this event", event);
 
         var grab = document.getElementById("grab").value;
-        if (grab.value === null){
-             event.preventDefault();   
         var myLatLng = event.latLng;
         var lat = myLatLng.lat();
         var lng = myLatLng.lng();
@@ -100,7 +101,6 @@ app.controller("downtownCtrl", function($scope, styleFactory, markerFactory, $ti
             place: "downtown",
             title: grab
         };
-    };
 
         saveMarkerToFB($scope.coordinates);
     });
@@ -158,13 +158,13 @@ app.controller("downtownCtrl", function($scope, styleFactory, markerFactory, $ti
     }
 
        $('#grab').change(function() {
-        console.log("grab.value", grab.value);
+        // console.log("grab.value", grab.value);
 
         let modal = $('#myModal');
-        console.log("submit button works");
+        // console.log("submit button works");
         // sendGrabName(grab);
         modal.modal('hide');
-        console.log("grab.value after modal is closed", grab.value);
+        // console.log("grab.value after modal is closed", grab.value);
         //grab.value now needs to be allowed into the make a new marker on the map function
 
     });
