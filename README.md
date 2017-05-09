@@ -20,5 +20,5 @@ ParkNashville is ideal for a user who already utilizes the GoogleMaps mobile app
     - Maps are created using GoogleMap's JavaScript v.3 API
     - Google's FireBase used for database storage. 
 
-## PARKNashville is LIVE: try it now:
+## PARKNashville is LIVE: try the DEMO now:
 https://briwyatt.github.io/parknashville/
